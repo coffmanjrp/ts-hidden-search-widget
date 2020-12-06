@@ -1,0 +1,42 @@
+@import 'config';
+
+.search {
+  position: relative;
+  height: 3.125rem;
+  .input {
+    padding: 0.9375rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    background: #fff;
+    border: none;
+    font-size: 1.125rem;
+    transition: width 0.3s ease;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.125rem;
+    height: 3.125rem;
+    background: #fff;
+    border: none;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+  &.active {
+    .input {
+      width: 12.5rem;
+    }
+    .btn {
+      transform: translateX(12.375rem);
+    }
+  }
+}
