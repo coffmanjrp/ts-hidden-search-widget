@@ -4,72 +4,44 @@
 *:after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, right top, from(#7b5fff), to(#7158e2));
   background: linear-gradient(90deg, #7b5fff, #7158e2);
   font-family: 'Roboto', sans-serif;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .search {
   position: relative;
-  height: 3.125rem;
-}
-
-.search .input {
-  padding: 0.9375rem;
-  width: 3.125rem;
-  height: 3.125rem;
-  background: #fff;
-  border: none;
-  font-size: 1.125rem;
-  -webkit-transition: width 0.3s ease;
-  transition: width 0.3s ease;
-}
-
-.search .input:focus {
-  outline: none;
-}
-
-.search .btn {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3.125rem;
-  height: 3.125rem;
-  background: #fff;
-  border: none;
-  font-size: 1.5rem;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  cursor: pointer;
-}
-
-.search .btn:focus {
-  outline: none;
-}
-
-.search.active .input {
-  width: 12.5rem;
-}
-
-.search.active .btn {
-  -webkit-transform: translateX(12.375rem);
-          transform: translateX(12.375rem);
-}
+  height: 3.125rem; }
+  .search .input {
+    padding: 0.9375rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    background: #fff;
+    border: none;
+    font-size: 1.125rem;
+    transition: width 0.3s ease; }
+    .search .input:focus {
+      outline: none; }
+  .search .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.125rem;
+    height: 3.125rem;
+    background: #fff;
+    border: none;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    cursor: pointer; }
+    .search .btn:focus {
+      outline: none; }
+  .search.active .input {
+    width: 12.5rem; }
+  .search.active .btn {
+    transform: translateX(12.375rem); }
